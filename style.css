@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f5e7ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #252747;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #4934a3;
+}
+
+header p {
+    color: #666;
+    font-size: 15px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(40, 30, 100, 0.12);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d8d8e8;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    background: #fcfcff;
+}
+
+select:focus,
+textarea:focus {
+    border-color: #7254dc;
+}
+
+.status {
+    background: #f0edff;
+    color: #5b43b5;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.buttons,
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.start-btn {
+    flex: 2;
+    background: #6545d8;
+    color: white;
+}
+
+.stop-btn {
+    flex: 1;
+    background: #e84c5b;
+    color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 170px;
+    line-height: 1.6;
+}
+
+.action-buttons button {
+    flex: 1;
+    background: #efedff;
+    color: #4934a3;
+}
+
+.note {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 22px;
+    color: #666;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .buttons button {
+        padding: 12px 9px;
+    }
+
+    .action-buttons button {
+        flex: 1 1 40%;
+    }
+}
