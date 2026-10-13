@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">🎙️</div>
+            <h1>Voice to Text</h1>
+            <p>Convert your speech into text instantly.</p>
+        </header>
+
+        <main class="card">
+            <label for="language">Choose Language</label>
+
+            <select id="language">
+                <option value="en-US">English (US)</option>
+                <option value="en-IN">English (India)</option>
+                <option value="hi-IN">Hindi</option>
+            </select>
+
+            <div class="status" id="status">
+                Ready to listen
+            </div>
+
+            <div class="buttons">
+                <button id="startBtn" class="start-btn">
+                    🎤 Start Speaking
+                </button>
+
+                <button id="stopBtn" class="stop-btn" disabled>
+                    ⏹ Stop
+                </button>
+            </div>
+
+            <label for="output">Your Text</label>
+
+            <textarea
+                id="output"
+                placeholder="Your spoken words will appear here..."
+                rows="8"
+            ></textarea>
+
+            <div class="action-buttons">
+                <button id="copyBtn">📋 Copy Text</button>
+                <button id="downloadBtn">⬇ Download</button>
+                <button id="clearBtn">🗑 Clear</button>
+            </div>
+
+            <p class="note">
+                Note: Allow microphone access when your browser asks.
+            </p>
+        </main>
+
+        <footer>
+            Made with ❤️ using HTML, CSS and JavaScript
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
